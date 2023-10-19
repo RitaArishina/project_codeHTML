@@ -1,0 +1,138 @@
+.body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    margin: 0;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+    padding: 0px 293px;
+    background-color: #DEDEDE;
+}
+
+.page-header__logo {
+    weight: 202px;
+    height: 147px;
+}
+
+.page-header__nav-link {
+    color: #000000;
+    margin: 0 25px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+
+}
+
+.btn {
+    display: inline-flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.page-header__buttonuser {
+    border: 1px solid var(--1, #1F1E1E);
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+
+}
+
+.offers{
+    
+}
+
+.home__offers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.home__main-header {
+    margin-top: 100px;
+    color: var(--1, #1F1E1E);
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.home__main-head {
+    margin-top: 70px;
+    color: var(--1, #1F1E1E);
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.home_main-he {
+    margin-top: 100px;
+    color: var(--1, #1F1E1E);
+    text-align: center;
+    font-family: "Lora", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 136.364% */
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+}
+
+.btn1{
+    margin-top: 46px;
+    display: inline-flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} 
+
+.offers-btn {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-decoration: none;
+    background-color: #bc3324;
+}
+
+.offers-btn1{
+    color: #1F1E1E;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-decoration: none;
+    width: 245.881px;
+    padding: 15px 40px;
+    gap: 10px;
+    border: 1px solid var(--1, #1F1E1E);
+}
+
+.page-footer{
+
+}
