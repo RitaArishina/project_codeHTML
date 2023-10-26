@@ -4,21 +4,55 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.375;
-    margin: 0;
 }
 
 .page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    z-index: 100;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 222, 222, 0.5);
+    @supports (backdrop-filter: blur(10px)){
+    backdrop-filter: blur(10px);
+    background-color: rgba(222, 222, 222, 0.5);;
+}
+}
+
+.page-header_container{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
 	align-items: center;
-    justify-content: space-between;
-    padding: 0px 293px;
-    background-color: #DEDEDE;
 }
 
 .page-header__logo {
     weight: 202px;
     height: 147px;
+    margin-right: 273px;
+    display: inline-block;
+}
+
+.page-header__nav{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    margin-right: 230px;
 }
 
 .page-header__nav-link {
@@ -28,109 +62,74 @@
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
-
-}
-
-.btn {
-    display: inline-flex;
-    padding: 15px 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
+    text-wrap: nowrap;
 }
 
 .page-header__buttonuser {
     border: 1px solid var(--1, #1F1E1E);
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21.79px;
-    font-family: "Open Sans", sans-serif;
-}
-
-.main {
-
-}
-
-.offers{
-    
-}
-
-.home__offers {
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-}
-
-.home__main-header {
-    margin-top: 100px;
-    color: var(--1, #1F1E1E);
-    text-align: center;
-    font-family: "Lora", sans-serif;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.home__main-head {
-    margin-top: 70px;
-    color: var(--1, #1F1E1E);
-    text-align: center;
-    font-family: "Lora", sans-serif;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.home_main-he {
-    margin-top: 100px;
-    color: var(--1, #1F1E1E);
-    text-align: center;
-    font-family: "Lora", sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 136.364% */
-    letter-spacing: 0.44px;
-    text-transform: uppercase;
-}
-
-.btn1{
-    margin-top: 46px;
-    display: inline-flex;
-    padding: 15px 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-} 
-
-.offers-btn {
-    color: #FFFFFF;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21.79px;
-    text-decoration: none;
-    background-color: #bc3324;
-}
-
-.offers-btn1{
     color: #1F1E1E;
-    font-family: "Open Sans", sans-serif;
+    background-color: transparent;
+    text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    line-height: 21.79px;
-    text-decoration: none;
-    width: 245.881px;
+    line-height: normal;
+    box-sizing: border-box;
     padding: 15px 40px;
-    gap: 10px;
-    border: 1px solid var(--1, #1F1E1E);
+}
+
+.home{
+    padding-top: 147px;
+}
+
+.main-header_title,
+.main-header_text {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: normal;
+    color: #1F1E1E;
+}
+
+.main-header_title{
+    margin:  0 0 70px;
+}
+
+.main-header_text {
+    margin: 0 auto;
+    max-width: 948px;
+    width: 100%;
+}
+
+.main-header_picture{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.main-header_picture::before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 16.927%;
+}
+
+.main-header_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-header{
+    padding: 100px 0;
 }
 
 .page-footer{
