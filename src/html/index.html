@@ -16,18 +16,17 @@
                     </picture>
                     <p class="main-header__text">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЕЦ И ДЕЛОМ<br> МЕСТО ДЛЯ НАСТОЯЩЕГО</p>
                 </header>
-                <section class="offers home__offers"></section>
-                    
-                <section class="about home__about"></section>
+                @@include('blocks/offers.html', {class: 'home__offers'})
+                @@include('blocks/about.html', {class: 'home__about'})
                 <section class="upcoming home__upcoming"></section>
-                <section class="listing home__listing"></section>
-                <section class="contacts home__contacts"></section>
+                @@include('blocks/blog-listing.html', {class: 'home__listing'})
+                @@include('blocks/contacts.html', {class: 'home__contacts'})
                 
                 <div class="doit home__doit"></div>
             </div>
         </main>
         
         @@include('blocks/page-footer.html')
-
+        @@include('blocks/event-pp.html')
     </body>
 </html>
